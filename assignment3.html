@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h3{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 900;
+        
+    }
+    .form-box{
+        width: 70%;
+        margin: auto;
+        background-color: rgb(150, 201, 248);
+        padding: 70px;
+        box-shadow: 0px 3px 8px  #555;
+    }
+    input{
+    margin-left: 20px;
+    margin-bottom: 12px;
+    padding: 10px 25px;
+
+    }
+label{
+    width:140px;
+    display: inline-block;
+    font-weight: 900;
+ }
+
+textarea,select{
+    margin-left: 21px;
+}
+table{
+    margin-left: 160px;
+}
+.btn{ 
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 500px;
+    
+}
+button{
+    font-size: 15px;
+    padding: 10px;
+    background-color: green;
+    font-weight: 800;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: lightgreen;
+}
+#btn2{
+    background-color: red;
+}
+#btn2:hover{
+    background-color: rgb(248, 60, 60);
+}
+</style>
+
+</head>
+<body>
+    <h3>Student Registration Form</h3>
+    <div class="form-box">
+        
+        <form action="#">
+<label for="firstname">FIRST NAME </label>
+<input type="text" id="firstname"  placeholder="Enter your first name"> (max 30 characters A-Z and a-z)
+<br>
+<label for="lasttname">LAST NAME </label>
+<input type="text" id="lasttname"  placeholder="Enter your last name">(max 30 characters A-Z and a-z)
+<br>
+<label for="dateofbirth">DATE OF BIRTH</label>
+<input type="date">
+<br>
+<label for="email">EMAIL ID </label>
+<input type="email" id="email" placeholder="example@gmail.com" > 
+<br>
+<label for="phonenumber">PHONE NUMBER </label>
+<input type="tel" id="phonenumber" placeholder="03XXXXXXXX" > ( 11 digits only)
+<br>
+<label for="gender">GENDER </label>
+<input type="radio" name="gender" > MALE <input type="radio" name="gender"> FEMALE
+<br> <label for="firstname" id ="adre">ADDRESS</label><textarea  placeholder="Enter your address" cols="22" rows="05"></textarea>
+<br>
+<br>
+<label for="email">CITY </label>
+<input type="text"  placeholder="Enter city" > (max 30 characters A-Z and a-z )
+<br>
+<label for="email">PIN CODE</label>
+<input type="password" placeholder="Enter pin code" > (6 digits number)
+<br>
+<label for="lasttname">STATE</label>
+<input type="text" id="lasttname"  placeholder="Enter your state">(max 30 characters A-Z and a-z)
+<br>
+<label for="country">COUNTRY </label>
+<select name="country" >
+    <option value="">--Select country--</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="Afghanistan">Afghanistan</option>
+    <option value="India">India</option>
+    <option value="Nepal">Nepal</option>
+</select>
+<br> <br>
+<label for="hobbies">HOBBIES</label>
+<input type="checkbox" value="Cricket"> Cricket <input type="checkbox" value="Football"> Football <input type="checkbox" value="Drawing"> Drawing <input type="checkbox"> Dancing
+<br> <label for=""></label> <input type="checkbox"> Other <input type="text">
+<br>
+<br>
+<br>
+<label for="">QUALIFICATION</label>
+<table>
+    <tr>
+        <th>S.NO</th>
+        <th>EXAMINATION</th>
+        <th>BOARD</th>
+        <th>PERCENTAGE</th>
+        <th>YEAR OF PASSINGG</th>
+    </tr>
+    <tr>
+        <td>1  </td>
+        <td>Class X</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>2  </td>
+        <td>Class Xll</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>3 </td>
+        <td>Graducation</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>4 </td>
+        <td>Master</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+  
+</table>
+
+<br>
+<br>
+<label for="courses">COURSES APPLIED FOR</label>
+<input type="radio"> B.COM <input type="radio">BCA 
+<input type="radio"> B.Sc <input type="radio"> B.A
+<br> <br>
+<div class="btn">
+    <button>SUBMIT</button>
+<button id="btn2">RESET</button>
+</div>
+</form>
+
+    </div>
+</body>
+</html>
